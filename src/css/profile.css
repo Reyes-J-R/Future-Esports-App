@@ -1,0 +1,100 @@
+.profile-page main {
+    padding: 0;
+}
+
+.profile-container {
+    padding: 5vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+.user-name * {
+    margin: 0;
+    padding: 0;
+}
+
+.user-name h1 {
+    font-size: calc(5vw + 20px);
+}
+
+.user-name p {
+    font-size: calc(1vw + 16px);
+}
+
+.user-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.user-pic h1 {
+    padding: 0;
+    margin: 0;
+    font-size: calc(4vw + 20px);
+}
+
+.user-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    /* margin: 20px; */
+}
+
+.user-stat-cell {
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.user-stat-cell p {
+    justify-self: right;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.user-stat-cell h3 {
+    margin: 0;
+    /* margin-right: 20px; */
+    font-size: calc(4vw + 10px);
+    padding: 20px;
+    justify-self: left;
+    width: 15%;
+}
+
+.user-stat-cell .credit-container {
+    margin-right: -40px;
+    margin-left: -10px;
+}
+
+.account-toolbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn-logout {
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: calc(.5vw + 10px);
+    color: white;
+    background-color: #ff0000;
+    font-weight: bold;
+
+}
+
+@media (max-width: 400px) {
+    .user-stats {
+        grid-template-columns: 1fr;
+    }
+}

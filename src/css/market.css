@@ -1,0 +1,75 @@
+.redeem-section {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    padding: 0;
+    padding-top: 20px;
+    overflow-x: scroll;
+}
+
+.redeem-tile {
+    box-shadow: 0px 0px 10px 0px black;
+    height: calc(30vw);
+    margin: calc(1vw + 1px);
+    width: calc(30vw + 10px);
+    min-width: 140px;
+    min-height: 140px;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px;     */
+    margin: 10px;
+    /* min-height: 140px; */
+    background-color: rgb(4, 4, 40);
+    border: 2px solid gold;
+}
+.redeem-tile h2 { 
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: calc(2vw + 20px);
+    color: gold;
+    
+}
+
+.redeem-btn {
+    
+    width: 100%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: auto 0px 0px 0px;
+    padding: 0;
+    /* border-radius: 10px; */
+    border: 0;
+    border-top: 1px solid gold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(6, 11, 105);
+}
+
+.redeem-btn .credit-container p {
+    color: white;
+    font-size: calc(1vw + 20px) !important; 
+    margin-right: 10px;
+}
+
+.redeem-info {
+    padding: 10px;
+}
+
+.redeem-info p{
+    font-size: calc(1vw + 16px);
+    padding: 0px;
+}
+
+
+@media (max-width: 400px) {
+    .redeem-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

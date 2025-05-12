@@ -1,0 +1,38 @@
+.nav-bottom {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    position: fixed;
+    left: 0;
+    width: 100px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.nav-btn {
+    height: calc(100vh / 4);
+    background-color: var(--bg-theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: 0px;
+}
+
+.nav-icon {
+    font-size: 30px;
+    color: rgb(6, 93, 255)
+}
+
+@media (max-width: 700px){
+    .nav-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        position: fixed;
+        top: 87vh;
+    }
+
+    .nav-btn {
+        height: 13vh;
+    }
+
+}

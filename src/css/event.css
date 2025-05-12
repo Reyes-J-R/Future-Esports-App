@@ -1,0 +1,462 @@
+.event-page p {
+    font-family: 'jura';
+}
+
+.event-banner {
+        width: 100%;
+        height: calc(30vh + 50px);
+        /* min-height: 200px; */
+        /* max-height: 100px; */
+        background: url("../media/bgmi.jpeg");
+        background-size: cover;
+        background-position: 60% 94%;
+        margin: auto
+}
+
+.event-head {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 30px 0px;
+}
+
+.event-head h1 {
+    margin: 0;
+    font-size: calc(5vw + 20px);
+    margin-bottom: 10px;
+}
+
+.content-div {
+    padding: 10px 20px 0px 20px;
+}
+
+.content-div p {
+    font-size: calc(1vw + 16px);
+}
+
+.event-head span {
+    display: flex;
+    margin: 0;
+    justify-content: left;
+}
+
+.event-head span h3 {
+    margin: 5px 10px 0px 0px;
+}
+
+.event-game {
+    background-color: rgb(22, 230, 22);
+    padding: 2px calc(5vw);
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    /* font-size: 5vw; */
+}
+
+.template-container {
+    background-color: #001118;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    max-height: 400px;
+    border: 2px solid rgb(83, 12, 12);
+}
+
+.template-head {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+}
+
+.template-body {
+    width: 100%;
+    overflow: scroll;
+}
+
+.player-count {
+    margin-top: 0;
+}
+
+.template-heading {
+    justify-self: center;
+    margin:auto;
+    margin-top: 0;
+}
+
+.playerlist{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.template-scroll {
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+.playercell {
+    padding: 15px;
+    background-color: #101B24;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px -2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playercell-name {
+    font-size: 20px;
+
+}
+
+.event-property-container {
+    display: flex;
+    align-items: center;
+}
+
+.template-foot {
+    display: flex;
+    justify-content: center;
+}
+
+.template-event-join-btn, .template-event-leave-btn{
+    padding: 10px;
+    background-color: white;
+    color: #001118;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 5em;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    position:static;
+    color: green;
+    align-items: center;
+}
+
+.event-start-btn {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: green;
+    width: 5em;
+    
+}
+
+
+.template-event-leave-btn {
+    color: red;
+}
+
+.template-event-join-btn:hover, .template-event-leave-btn:hover, .event-start-btn:hover {
+    transition: .1s;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.event-property-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+.event-property-container .side-heading {
+    margin-right: 10px;
+    margin-bottom: 40px;
+    /* margin-bottom: 0; */
+
+}
+
+.event-property {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.content-div p {
+    font-size: 18px;
+}
+
+
+
+
+.rewards-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.winner {
+    margin: 0;
+    width: 100%;
+    height: 15vw;
+} 
+
+.prize-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 1vw;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid gold;
+}
+
+.prize-div p {
+    font-size: 5vw;
+    margin-top: -3vh;
+    /* margin: 5px 20px; */
+}
+
+.reward-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward-content h2 {
+    font-size: 5vw;
+}
+
+.reward-content img {
+    width: 40px;
+}
+
+.winner-1 {
+    color: yellow;
+}
+
+.winner-2 {
+    color: rgb(133, 133, 133);
+}
+
+.winner-3 {
+    color: #c46d0a;
+    
+}
+
+.reward-position {
+    font-size: 6vw;
+}
+
+/* KNOCKOUT */
+
+.bracket-col {
+    background-color: #101B24;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.bracket-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+.bracket-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.bracket-cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.bracket-cols-4 div {
+    margin: 25px 5px;
+}
+
+.bracket-cols-2 div {
+    margin: 75px 5px;
+}
+
+.bracket-cols-winner {
+    margin-bottom: 50px;
+}
+
+.bracket-cols-winner h2 {
+    text-align: center;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.league-table {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.league-table th {
+    text-align: left;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.league-table td {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+
+.upcoming-matches-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 85vw; */
+}
+
+.upcoming-matches-holder div h2 {
+    font-size: calc(.7vw + 20px);
+}
+
+.result-submit-btn, .match-history-btn {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* overflow: scroll; */
+    padding: 10px 50px !important;
+}
+
+
+
+.upcoming-match {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #001118;
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.ucm-toolbar {
+    display: flex;
+}
+
+.ucm-toolbar button {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.ucm-toolbar button:hover {
+    transition: 0s;
+    font-size: 21px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.match-result-playernames {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.match-result-playernames h2 {
+    margin: 0px 10px;
+}
+
+.match-result-playerinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-result-statfields{
+    display: flex;
+}
+
+.winner-section {
+    justify-content: center;
+}
+
+.winner-section *{
+    margin: 10px;
+}
+
+.winner-section select {
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.match-result-submit {
+    border: 1;
+}
+/* 
+.match-result-win {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-height: 50vh;
+    overflow-y: scroll;
+    background-color: #101B24;
+    padding: 50px;
+} */
+
+.stats-p input {
+    width: 20vw;
+}
+
+.playerlist h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 850px) {
+    .playerlist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .playerlist {
+        grid-template-columns: 1fr;
+    }
+
+    /* .rewards-container {
+        flex-direction: column;
+    } */
+
+    /* .reward-content h2 {
+        font-size: 30px;
+    } */
+}
+
+
