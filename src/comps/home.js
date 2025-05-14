@@ -98,8 +98,9 @@ function Home() {
         <section className='sec-3'>
           <h1>Trending Events</h1>
           <div className='event-tile-holder'>
+          
           {events ? events.map((item)=>{
-            return <div className="event-tile">
+            return <div className="event-tile" backgroundImage={item.img}>
             <h2 className="event-heading">{item.title}</h2>
             <button className="btn-continue"><Link to={"/event/" + item.id}>{"Join" }</Link></button>
         </div>
