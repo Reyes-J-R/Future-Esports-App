@@ -100,7 +100,7 @@ function Home() {
           <div className='event-tile-holder'>
           
           {events ? events.map((item)=>{
-            return <div className="event-tile" backgroundImage={"/media/" + item.img}>
+            return <div className="event-tile" backgroundImage={"url(" + API_BASE_URL + item.img + ");"}>
             <h2 className="event-heading">{item.title}</h2>
             <button className="btn-continue"><Link to={"/event/" + item.id}>{"Join" }</Link></button>
         </div>
